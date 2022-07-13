@@ -17,8 +17,7 @@ html {
 }
 img {
     max-width: 100%;
-    max-height: auto;
-    display: inline-block;
+    
 }
 ul {
     list-style: none;
@@ -28,6 +27,9 @@ a {
     cursor: pointer;
     color: var(--Medium-Gray);
 }
+img {
+    display: inline-block;
+}
 
 body {
     font-family: var(--font);
@@ -36,24 +38,39 @@ body {
 
 .main-section {
     padding: 30px;
-    max-height: inherit;
+    max-height: 100vh;
     font-size: 18px;
     margin-bottom: 6rem;
 }
+.btn {
+    padding: 1rem 2rem;
+}
 /* navigation */
 .main-nav {
+    width: 90%;
+    margin-right: auto;
     display: flex;
     align-items: center;
+    margin-bottom: 3rem;
+}
+.main-nav .logo-container {
+    width: 6rem;
 }
 .main-nav .logo-img {
     margin-right: 40px;
 }
 .main-nav .nav-links {
     display: flex;
-
 }
 .main-nav .nav-links li {
-    margin-right: 30px;
+    margin-right: 2rem;
+}
+.main-nav .nav-links li a  {
+   align-self: center;
+   width: 100%;
+}
+.main-nav .nav-links li a img {
+    width: .8rem;
 }
 .main-nav .login-section {
     margin-left: auto;
@@ -68,34 +85,6 @@ body {
     padding: 3rem 8rem;
 }
 /* info-section */
-.info-section {
-    flex: 1 1 30rem;
-    padding-right:  7rem;
-    padding-left: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-.info-section .header-one {
-    color: var(--Black);
-    font-size: 5.2rem;
-    margin-bottom: 3rem;
-}
-.info-section .para {
-    margin-bottom: 4rem;
-}
-.info-logos {
-    margin-top: 4rem;
-}
-.info-logos ul{
-display: flex;
-}
-.info-logos ul li:not(:last-child) {
-    padding-right: 4rem;
-}
-/* image section */
-.img-section {
-    flex: 1 0 20rem;
-    width: 100%;
-}
+
+
 
