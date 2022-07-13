@@ -22,26 +22,50 @@
 		<title>Frontend Mentor | Intro section with dropdown navigation</title>
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
+		
 	</head>
 	<body>
-		Features Company Careers About Login Register Make remote work Get your team
+    <main class="main-section">
+      <nav class="main-nav">
+        <img class="logo-img" src="images/logo.svg" alt="snap logo">
+        <ul class="nav-links">
+          <li class="features">Features</li>
+          <li class="company">Company</li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="login-section">
+          <a href="#" class="login btn">Login</a>
+          <a href="#" class="register btn">Register</a>
+        </div>
+      </nav>
+      <header class="header">
+        <section class="info-section">
+          <h1 class="header-one">
+            Make remote work
+          </h1>
+          <p class="para">
+            Get your team
 		in sync, no matter your location. Streamline processes, create team rituals,
-		and watch productivity soar. Learn more
+		and watch productivity soar.
+          </p>
+          <a href="#" class="info-btn btn">Learn more</a>
+          <div class="info-logos">
+            <ul>
+              <li><a href="#"><img src="images/client-databiz.svg" alt=""></a></li>
+              <li><a href="#"><img src="images/client-audiophile.svg" alt=""></a></li>
+              <li><a href="#"><img src="images/client-meet.svg" alt=""></a></li>
+              <li><a href="#"><img src="images/client-maker.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="img-section">
+          <img src="images/image-hero-desktop.png" alt="" class="header-img">
+        </section>
+      </header>
+    </main>
 
-		<div class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+		
 		</div>
 	</body>
 </html>
