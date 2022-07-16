@@ -18,7 +18,6 @@ html {
 img {
     max-width: 100%;
     display: inline-block;
-    
 }
 ul {
     list-style: none;
@@ -28,23 +27,24 @@ a {
     cursor: pointer;
     color: var(--Medium-Gray);
 }
-img {
-    display: inline-block;
-}
+
 
 body {
     font-family: var(--font);
 }
 .main-container {
-    min-height: 100vh;
+    max-height: 100vh;
+    max-width: 120rem;
+    margin: 0 auto;
+
 }
 /* navigation */
 .navigation {
     width: 90%;
-    margin: auto;
+    margin: 3rem auto;
     display: flex;
     align-items: center;
-    height: 10vh;
+    
 }
 .logo-container {
     width: 5rem;
@@ -74,24 +74,33 @@ body {
 }
 /* hero main section */
 .hero-section {
+    flex: 1 1 80rem;
     display: flex;
+    padding: 0 10rem;
+    
 }
 /* info-section */
 .info-section {
+    padding-right: 5rem;
     display: flex;
     flex-direction: column;
-    flex: 1 1 40rem;
-
+}
+.info-section .info-section-header {
+    font-size: 4.4rem;
+}
+.info-section .info-section-paragraph {
+    padding: 3rem 3rem 3rem 0;
+    letter-spacing: 2px;
 }
 /* image-section */
-.img-section {
-    flex: 1 1 40rem;
+.img-section { 
+    max-width: 50rem;
+    /* background-image: url(images/image-hero-desktop.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
 }
-.hero-container {
-    width: 100%;
-}
-.hero-container .hero-img {
-    width: 100%;
-}
-
+    .hero-img {
+        width: 100%;
+    }
 
