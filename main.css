@@ -34,7 +34,7 @@ body {
 }
 .main-container {
     max-height: 100vh;
-    max-width: 120rem;
+    max-width: 110rem;
     margin: 0 auto;
 
 }
@@ -49,9 +49,13 @@ body {
 .logo-container {
     width: 5rem;
     margin-right: 4rem;
+    display: flex;
+    align-items: center;
 }
 .logo {
+    height: auto;
     width: 100%;
+
 }
 
 .navigation-links a {
@@ -60,8 +64,8 @@ body {
 .user {
   margin-left: auto;
 }
-.user .btn {
-    padding: .5rem 1rem;
+.btn {
+    padding: .8rem 1.2rem;
 }
 .user .register-btn {
     margin-left: 1rem;
@@ -74,27 +78,50 @@ body {
 }
 /* hero main section */
 .hero-section {
-    flex: 1 1 80rem;
     display: flex;
     padding: 0 10rem;
     
 }
 /* info-section */
 .info-section {
-    padding-right: 5rem;
+   flex: 0 1 60%;
+    padding-right: 6rem;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 .info-section .info-section-header {
-    font-size: 4.4rem;
+    font-size: 5.2rem;
+    color: var(--Black);
 }
 .info-section .info-section-paragraph {
-    padding: 3rem 3rem 3rem 0;
-    letter-spacing: 2px;
+    padding: 3rem 3rem 4rem 0;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: var(--Medium-Gray);
+}
+.info-section-btn {
+    align-self: flex-start;
+    background-color: var(--Black);
+    border-radius: 10px;
+    color: var(--White);
+    border: 2px solid black;
+
+}
+.info-section-btn:hover {
+    background-color: var(--White);
+    color: var(--Black);
+    border: 2px solid black;
+}
+.companies-logos {
+    margin-top: 9rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
 /* image-section */
 .img-section { 
-    max-width: 50rem;
+    flex: 2 0 40%;
     /* background-image: url(images/image-hero-desktop.png);
     background-size: cover;
     background-position: center;
